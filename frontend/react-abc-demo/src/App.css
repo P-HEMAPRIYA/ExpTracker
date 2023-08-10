@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(33, 214, 214);
+}
+
+.exp {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  justify-content: space-around;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+}
+.headers {
+  background-color: rgb(216, 216, 68);
+}
+.headd {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(5, 5, 5);
+}
