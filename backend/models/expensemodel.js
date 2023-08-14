@@ -19,12 +19,6 @@ const ExpenseSchema =new mongoose.Schema({
         default:"income"
 
     },
-    date:{
-        type:Date,
-        required:true,
-        trim:true
-
-    },
     description:{
         type:String,
         required:true,
@@ -32,6 +26,12 @@ const ExpenseSchema =new mongoose.Schema({
         trim:true
 
     },
+    date:{
+        type:Date,
+        required:true,
+        trim:true
+
+    }
 },{timestamps: true})
 
 module.exports=mongoose.model('Expense',ExpenseSchema)

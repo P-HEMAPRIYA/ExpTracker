@@ -2,7 +2,7 @@ const ExpenseSchema= require("../models/expensemodel")
 
 exports.addExpense=async(req,res)=>{
    const{title,amount,type,description,date}=req.body
-   const income = ExpenseSchema({
+   const expense = ExpenseSchema({
     title,
     amount,
     type,
@@ -10,8 +10,8 @@ exports.addExpense=async(req,res)=>{
     date
    })
    try {
-    if(!title  || !type || !description || ! date){
-        return res.status(400).json({message:"allfields are required"})
+    if(!title  || !type || !description || ! date || !amount){
+        return res.status(400).json({message:"all fields are required"})
     }
     if(amount<=0 || !amount === 'number'){
         return res.status(400).json({message:"expense should be only in positive"})

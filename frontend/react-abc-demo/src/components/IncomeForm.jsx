@@ -22,8 +22,8 @@ function IncomeForm({ onAddIncome }) {
       title,
       amount: parseFloat(amount),
       type,
-      date,
       description,
+      date,
     };
 
     // Call the onAddIncome function with the new income object
@@ -42,7 +42,12 @@ function IncomeForm({ onAddIncome }) {
       <TextField
         label="Income Title"
         variant="outlined"
-        style={{ width: "100%", marginBottom: "10px", display: "block" }}
+        style={{
+          width: "100%",
+          marginBottom: "10px",
+          display: "block",
+          fontWeight: "bold",
+        }}
         margin="normal"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
@@ -52,7 +57,12 @@ function IncomeForm({ onAddIncome }) {
         type="number"
         variant="outlined"
         margin="normal"
-        style={{ width: "100%", marginBottom: "10px", display: "block" }}
+        style={{
+          width: "100%",
+          marginBottom: "10px",
+          display: "block",
+          fontWeight: "bold",
+        }}
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
       />
@@ -61,7 +71,12 @@ function IncomeForm({ onAddIncome }) {
         type="date"
         variant="outlined"
         margin="normal"
-        style={{ width: "100%", marginBottom: "10px", display: "block" }}
+        style={{
+          width: "100%",
+          marginBottom: "10px",
+          display: "block",
+          fontWeight: "bold",
+        }}
         InputLabelProps={{
           shrink: true,
         }}
@@ -74,14 +89,24 @@ function IncomeForm({ onAddIncome }) {
         multiline
         rows={4}
         margin="normal"
-        style={{ width: "100%", marginBottom: "10px", display: "block" }}
+        style={{
+          width: "100%",
+          marginBottom: "10px",
+          display: "block",
+          fontWeight: "bold",
+        }}
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
       <Select
         label="Type"
         variant="outlined"
-        style={{ width: "100%", marginBottom: "10px", display: "block" }}
+        style={{
+          width: "100%",
+          marginBottom: "10px",
+          display: "block",
+          fontWeight: "bold",
+        }}
         margin="normal"
         value={type}
         onChange={(e) => setType(e.target.value)}
