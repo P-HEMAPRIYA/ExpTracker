@@ -29,6 +29,7 @@ exports.addExpense=async(req,res)=>{
 exports.getExpense = async(req,res)=>{
     try{
         const incomes=await ExpenseSchema.find().sort({createdAt:-1})
+
         res.status(200).json(incomes)
     }catch(error){
         res.status(500).json({message: 'server error'})
