@@ -7,12 +7,11 @@ const {readdirSync}=require('fs')
 require('dotenv').config()
 
 const PORT= process.env.PORT
-//middle ware
+
 
 index.use(express.json())
 index.use(cors())
 
-//routes
 
 readdirSync('./routes').map((route)=>index.use('/api/v1',require('./routes/'+route)))
 

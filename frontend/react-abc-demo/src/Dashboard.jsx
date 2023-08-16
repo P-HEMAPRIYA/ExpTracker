@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import IncomeForm from "./components/IncomeForm";
-import ExpenseForm from "./components/ExpenseForm";
+import IncomeForm from "./IncomeForm";
+import ExpenseForm from "./ExpenseForm";
 import "./App.css";
 
 export function Dashboard() {
